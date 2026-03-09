@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张晓燕 | Zhang Xiaoyan - Senior Engineering Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
+    body { font-family: 'Inter', 'Noto Sans SC', system-ui, sans-serif; }
+    .hero-bg { background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%); }
+    .card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+    .card:hover { transform: translateY(-8px); box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1); }
+    .lang-btn { transition: all 0.3s; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+  <!-- Navbar -->
+  <nav class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-md z-50 border-b border-slate-800">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-blue-400">张晓燕</div>
+      <div class="flex gap-8 text-sm font-medium">
+        <a href="#experience" class="hover:text-blue-400 transition">Experience / 经历</a>
+        <a href="#education" class="hover:text-blue-400 transition">Education / 教育</a>
+        <a href="#skills" class="hover:text-blue-400 transition">Skills / 技能</a>
+      </div>
+      <button onclick="toggleLang()" id="langBtn"
+        class="lang-btn px-5 py-2 bg-slate-800 hover:bg-blue-600 rounded-full text-sm font-medium flex items-center gap-2">
+        <i class="fas fa-globe"></i> <span id="langText">EN</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero-bg min-h-screen flex items-center pt-20">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-6xl font-bold mb-4" data-en="Zhang Xiaoyan" data-zh="张晓燕">张晓燕</h1>
+        <h2 class="text-3xl text-blue-400 mb-6" data-en="Senior Engineering Manager | Database & Backend" data-zh="资深工程经理 | 数据库与后端">Senior Engineering Manager | Database & Backend</h2>
+        <p class="text-xl text-slate-400 max-w-lg" data-en="10+ years building scalable fintech infrastructure at Marqeta (Bay Area). Ex-Huawei Android camera system engineer." data-zh="湾区Marqeta资深工程经理，10+年金融科技数据库架构经验。前华为终端BG相机软件工程师。">湾区Marqeta资深工程经理，10+年金融科技数据库架构经验。前华为终端BG相机软件工程师。</p>
+        
+        <div class="flex flex-wrap gap-6 mt-10">
+          <a href="mailto:zhangxiaoyan.us@yahoo.com" class="px-8 py-4 bg-blue-600 hover:bg-blue-500 rounded-2xl font-medium flex items-center gap-3 shadow-lg">
+            <i class="fas fa-envelope"></i> zhangxiaoyan.us@yahoo.com
+          </a>
+          <a href="tel:+15592164460" class="px-8 py-4 border border-slate-700 hover:border-blue-500 rounded-2xl font-medium flex items-center gap-3">
+            <i class="fas fa-phone"></i> +1 (559) 216-4460
+          </a>
+          <a href="https://github.com/yourname" target="_blank" class="px-8 py-4 border border-slate-700 hover:border-blue-500 rounded-2xl font-medium flex items-center gap-3">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+        </div>
+      </div>
+      <!-- 你的真实照片已替换在这里 -->
+      <div class="flex justify-center">
+        <img src="https://i.postimg.cc/2yqfJX6G/signal-2026-03-02-131102-002.jpg"
+             class="w-80 h-80 rounded-3xl object-cover border-4 border-blue-500/30 shadow-2xl transform hover:scale-105 transition duration-500"
+             alt="Zhang Xiaoyan">
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="max-w-6xl mx-auto px-6 py-24">
+    <h2 class="text-4xl font-bold mb-12 text-center" data-en="Experience" data-zh="工作经历">Experience</h2>
+    
+    <div class="card bg-slate-900 p-8 rounded-3xl mb-12">
+      <div class="flex flex-wrap justify-between mb-6">
+        <div>
+          <h3 class="text-2xl font-semibold" data-en="Senior Engineering Manager, Database Team" data-zh="数据库团队资深工程经理">Senior Engineering Manager, Database Team</h3>
+          <p class="text-blue-400">Marqeta • Oakland, Bay Area • 2018 – Present</p>
+        </div>
+        <span class="text-slate-500">9-person team</span>
+      </div>
+      <ul class="space-y-4 text-slate-300">
+        <li data-en="• Led 9-engineer team responsible for MySQL/PostgreSQL/MongoDB architecture, achieving 99.99% uptime for billions of daily transactions" data-zh="• 带领9人数据库团队，负责MySQL/PostgreSQL/MongoDB架构，支撑每日数十亿笔交易，达成99.99%可用性">• 带领9人数据库团队，负责MySQL/PostgreSQL/MongoDB架构，支撑每日数十亿笔交易，达成99.99%可用性</li>
+        <li data-en="• Designed and executed multi-tenant schema migration to AWS Aurora, reducing query latency by 65% and cutting costs 40%" data-zh="• 主导多租户Schema迁移至AWS Aurora，查询延迟降低65%，成本下降40%">• 主导多租户Schema迁移至AWS Aurora，查询延迟降低65%，成本下降40%</li>
+        <li data-en="• Ensured PCI-DSS & GDPR compliance through automated auditing and encryption; passed annual audits with zero findings" data-zh="• 实现PCI-DSS与GDPR合规自动化审计与加密，年审零问题通过">• 实现PCI-DSS与GDPR合规自动化审计与加密，年审零问题通过</li>
+        <li data-en="• Built Just-in-Time funding pipeline handling $10B+ annual volume with sub-100ms latency" data-zh="• 构建Just-in-Time资金管道，年处理100亿美元+，延迟<100ms">• 构建Just-in-Time资金管道，年处理100亿美元+，延迟<100ms</li>
+      </ul>
+    </div>
+
+    <div class="card bg-slate-900 p-8 rounded-3xl">
+      <div class="flex flex-wrap justify-between mb-6">
+        <div>
+          <h3 class="text-2xl font-semibold" data-en="Software Engineer, Terminal BG" data-zh="终端BG软件工程师">Software Engineer, Terminal BG</h3>
+          <p class="text-blue-400">Huawei • Shenzhen • 2010 – 2014</p>
+        </div>
+      </div>
+      <ul class="space-y-4 text-slate-300">
+        <li data-en="• Developed and optimized Android camera software module for Mate & P series; improved image processing speed by 40%" data-zh="• 负责Mate/P系列Android相机软件模块开发与优化，图像处理速度提升40%">• 负责Mate/P系列Android相机软件模块开发与优化，图像处理速度提升40%</li>
+        <li data-en="• Led 3-person sub-team for system stability architecture in P6 flagship project; shipped on time with 100% coverage" data-zh="• 带领3人小组完成P6旗舰项目系统稳定性架构，按时交付，覆盖率100%">• 带领3人小组完成P6旗舰项目系统稳定性架构，按时交付，覆盖率100%</li>
+        <li data-en="• Promoted twice (13→15级); received first batch of virtual restricted stock" data-zh="• 两次晋升（13级→15级），获首批虚拟受限股奖励">• 两次晋升（13级→15级），获首批虚拟受限股奖励</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="bg-slate-900 py-24">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold mb-12 text-center" data-en="Education" data-zh="教育背景">Education</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div class="card bg-slate-950 p-8 rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-2" data-en="M.S. Computer Science" data-zh="计算机科学硕士">M.S. Computer Science</h3>
+          <p class="text-blue-400 mb-6">University of California, Riverside • 2008 – 2010</p>
+          <p class="font-medium mb-4" data-en="Relevant Courses" data-zh="核心课程">Relevant Courses / 核心课程：</p>
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Advanced Algorithms</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Database Systems</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Distributed Systems</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Computer Networks</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Software Engineering</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Machine Learning</div>
+          </div>
+          <p class="mt-8 text-slate-400" data-en="• Capstone Project: Scalable Cloud Database Migration Framework" data-zh="• 毕业项目：可扩展云数据库迁移框架">• 毕业项目：可扩展云数据库迁移框架</p>
+        </div>
+        <div class="card bg-slate-950 p-8 rounded-3xl">
+          <h3 class="text-2xl font-semibold mb-2" data-en="B.S. Computer Science & Technology" data-zh="计算机科学与技术本科">B.S. Computer Science & Technology</h3>
+          <p class="text-blue-400 mb-6">Huazhong University of Science and Technology • 2004 – 2008</p>
+          <p class="font-medium mb-4" data-en="Relevant Courses" data-zh="核心课程">Relevant Courses / 核心课程：</p>
+          <div class="grid grid-cols-2 gap-3 text-sm">
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">C/C++ Programming</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Data Structures & Algorithms</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Operating Systems</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Database Systems</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Computer Networks</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Compiler Theory</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Embedded Systems</div>
+            <div class="bg-slate-900 px-4 py-3 rounded-2xl">Software Engineering</div>
+          </div>
+          <p class="mt-8 text-slate-400" data-en="• Thesis: Embedded Android Camera Software Optimization (2008)" data-zh="• 本科毕业论文：《嵌入式Android相机软件优化系统设计》（2008）">• 本科毕业论文：《嵌入式Android相机软件优化系统设计》（2008）</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="max-w-6xl mx-auto px-6 py-24">
+    <h2 class="text-4xl font-bold mb-12 text-center" data-en="Skills" data-zh="专业技能">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">MySQL / PostgreSQL / MongoDB</div>
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">AWS Aurora / RDS / Terraform</div>
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">PCI-DSS & GDPR Compliance</div>
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">Java / Python / Go</div>
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">Android Embedded Systems</div>
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">Database Migration & Sharding</div>
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">Team Leadership (9 engineers)</div>
+      <div class="bg-slate-900 p-6 rounded-3xl text-center">High-Availability Architecture</div>
+    </div>
+  </section>
+
+  <footer class="bg-slate-950 border-t border-slate-800 py-12 text-center text-sm text-slate-500">
+    © 2026 Zhang Xiaoyan • Built for Bay Area opportunities
+  </footer>
+
+  <script>
+    let isEnglish = false;
+    function toggleLang() {
+      isEnglish = !isEnglish;
+      document.querySelectorAll('[data-en]').forEach(el => {
+        el.textContent = isEnglish ? el.getAttribute('data-en') : el.getAttribute('data-zh');
+      });
+      document.getElementById('langText').textContent = isEnglish ? '中' : 'EN';
+    }
+    toggleLang(); toggleLang(); // 默认中文
+  </script>
+</body>
+</html>
